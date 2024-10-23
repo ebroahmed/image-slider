@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Image Slider</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="./fontawesome-free-5.12.1-web/css/all.min.css"
+    />
+  </head>
+  <body>
+    <div class="search">
+      <input type="text" id="searchBox" placeholder="&#x1F50D Search by Index" />
+      <button id="btn-search" onclick="searchImage()">Search</button>
+    </div>
+
+    <div id="image-container">
+      <div id="slider">
+        <img src="images/f1.jpg" alt="Image 1" />
+        <img src="images/f2.jpg" alt="Image 2" />
+        <img src="images/f3.jpg" alt="Image 3" />
+        <img src="images/f4.jpg" alt="Image 4" />
+      </div>
+    </div>
+    <i class="fas fa-arrow-left" id="prev" onclick="prevSlide()"></i>
+    <i class="fas fa-arrow-right" id="next" onclick="nextSlide()"></i>
+
+    <script src="script.js"></script>
+  </body>
+</html>
